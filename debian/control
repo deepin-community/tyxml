@@ -1,0 +1,105 @@
+Source: tyxml
+Priority: optional
+Maintainer: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Uploaders: Stéphane Glondu <glondu@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ libuchar-ocaml-dev,
+ libseq-ocaml-dev,
+ libuutf-ocaml-dev,
+ libre-ocaml-dev,
+ ocaml-nox,
+ ocaml-dune,
+ dh-ocaml
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Section: ocaml
+Homepage: http://ocsigen.org/tyxml
+Vcs-Browser: https://salsa.debian.org/ocaml-team/tyxml
+Vcs-Git: https://salsa.debian.org/ocaml-team/tyxml.git
+
+Package: libtyxml-ocaml-dev
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: ${ocaml:Provides}
+Recommends:
+ ocaml-findlib
+Description: typed XML in OCaml (development files)
+ TyXML allows one to build XML trees whose validity is ensured by the
+ typechecker. It's based on a translation of XML types into polymorphic
+ variants, originally written by Thorsten Ohl. Currently, the
+ transcription has been done for XHTML 1.0 and 1.1, HTML5 and SVG
+ (partial).
+ .
+ TyXML also provides a generic printer and some low-level (and
+ untyped) iterators over XML trees. The printer has options for
+ printing XHTML in more browser-friendly way when served as
+ "text/html" (instead of "text/xml"). HTML5 is always printed with
+ those options.
+ .
+ All modules provided by TyXML are also provided in functorial
+ interface, where every module is parameterised by the underlying XML
+ representation.
+ .
+ A camlp4 extension, named Pa_tyxml, allows one to write HTML pages or
+ HTML fragments with the usual syntax.
+ .
+ This package contains the development files needed to use TyXML.
+
+Package: libtyxml-ocaml
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: ${ocaml:Provides}
+Description: typed XML in OCaml (plugins)
+ TyXML allows one to build XML trees whose validity is ensured by the
+ typechecker. It's based on a translation of XML types into polymorphic
+ variants, originally written by Thorsten Ohl. Currently, the
+ transcription has been done for XHTML 1.0 and 1.1, HTML5 and SVG
+ (partial).
+ .
+ TyXML also provides a generic printer and some low-level (and
+ untyped) iterators over XML trees. The printer has options for
+ printing XHTML in more browser-friendly way when served as
+ "text/html" (instead of "text/xml"). HTML5 is always printed with
+ those options.
+ .
+ All modules provided by TyXML are also provided in functorial
+ interface, where every module is parameterised by the underlying XML
+ representation.
+ .
+ A camlp4 extension, named Pa_tyxml, allows one to write HTML pages or
+ HTML fragments with the usual syntax.
+ .
+ This package contains dynamically loadable modules for plugins.
+
+Package: libtyxml-ocaml-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Description: typed XML in OCaml (documentation)
+ TyXML allows one to build XML trees whose validity is ensured by the
+ typechecker. It's based on a translation of XML types into polymorphic
+ variants, originally written by Thorsten Ohl. Currently, the
+ transcription has been done for XHTML 1.0 and 1.1, HTML5 and SVG
+ (partial).
+ .
+ TyXML also provides a generic printer and some low-level (and
+ untyped) iterators over XML trees. The printer has options for
+ printing XHTML in more browser-friendly way when served as
+ "text/html" (instead of "text/xml"). HTML5 is always printed with
+ those options.
+ .
+ All modules provided by TyXML are also provided in functorial
+ interface, where every module is parameterised by the underlying XML
+ representation.
+ .
+ A camlp4 extension, named Pa_tyxml, allows one to write HTML pages or
+ HTML fragments with the usual syntax.
+ .
+ This package contains the documentation of TyXML.

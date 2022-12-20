@@ -1,0 +1,5 @@
+@OCamlStdlibDir@/tyxml/META
+@OCamlStdlibDir@/tyxml/*.cma
+DYN: @OCamlStdlibDir@/tyxml/*.cmxs
+@OCamlStdlibDir@/tyxml/*/*.cma
+DYN: @OCamlStdlibDir@/tyxml/*/*.cmxs

@@ -1,0 +1,14 @@
+@OCamlStdlibDir@/tyxml/*opam*
+@OCamlStdlibDir@/tyxml/*dune*
+@OCamlStdlibDir@/tyxml/*.ml*
+@OCamlStdlibDir@/tyxml/*.cmi
+@OCamlStdlibDir@/tyxml/*.cmt*
+OPT: @OCamlStdlibDir@/tyxml/*.cmx
+OPT: @OCamlStdlibDir@/tyxml/*.a
+OPT: @OCamlStdlibDir@/tyxml/*.cmxa
+@OCamlStdlibDir@/tyxml/*/*.ml*
+@OCamlStdlibDir@/tyxml/*/*.cmi
+@OCamlStdlibDir@/tyxml/*/*.cmt*
+OPT: @OCamlStdlibDir@/tyxml/*/*.cmx
+OPT: @OCamlStdlibDir@/tyxml/*/*.a
+OPT: @OCamlStdlibDir@/tyxml/*/*.cmxa
