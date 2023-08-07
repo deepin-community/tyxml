@@ -10,11 +10,12 @@ Build-Depends:
  libre-ocaml-dev,
  ocaml-nox,
  ocaml-dune,
- dh-ocaml
-Standards-Version: 4.5.0
+ libalcotest-ocaml-dev,
+ dh-ocaml (>= 1.2.1)
+Standards-Version: 4.6.0
 Rules-Requires-Root: no
 Section: ocaml
-Homepage: http://ocsigen.org/tyxml
+Homepage: https://ocsigen.org/tyxml
 Vcs-Browser: https://salsa.debian.org/ocaml-team/tyxml
 Vcs-Git: https://salsa.debian.org/ocaml-team/tyxml.git
 
@@ -82,6 +83,7 @@ Package: libtyxml-ocaml-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}
+Multi-Arch: foreign
 Description: typed XML in OCaml (documentation)
  TyXML allows one to build XML trees whose validity is ensured by the
  typechecker. It's based on a translation of XML types into polymorphic
