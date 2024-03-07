@@ -1,8 +1,36 @@
-tyxml (4.4.0-deepin1) unstable; urgency=medium
+tyxml (4.5.0-4) unstable; urgency=medium
 
-  * Rebuild
+  * Depend on ocaml instead of transitional ocaml-nox
+  * Bump Standards-Version to 4.6.2
+  * Mark <!nocheck> build-dependencies
 
- -- Deepin Packages Builder <packages@deepin.org>  Mon, 14 Nov 2022 17:49:14 +0800
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 10 Sep 2023 05:51:52 +0200
+
+tyxml (4.5.0-3) unstable; urgency=medium
+
+  * Include ocamlvars.mk in debian/rules
+
+ -- Stéphane Glondu <glondu@debian.org>  Thu, 27 Jul 2023 07:01:03 +0200
+
+tyxml (4.5.0-2) unstable; urgency=medium
+
+  * Use ocaml_dune DH buildsystem
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 15 Jul 2023 16:24:47 +0200
+
+tyxml (4.5.0-1) unstable; urgency=medium
+
+  [ Stéphane Glondu ]
+  * New upstream release
+  * Bump Standards-Version to 4.6.0
+
+  [ Debian Janitor ]
+  * libtyxml-ocaml-doc: Add Multi-Arch: foreign.
+  * Update watch file format version to 4.
+  * Use secure URI in Homepage field.
+  * Set upstream metadata fields
+
+ -- Stéphane Glondu <glondu@debian.org>  Sat, 04 Dec 2021 18:11:17 +0100
 
 tyxml (4.4.0-1) unstable; urgency=medium
 
