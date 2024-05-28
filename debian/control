@@ -8,11 +8,11 @@ Build-Depends:
  libseq-ocaml-dev,
  libuutf-ocaml-dev,
  libre-ocaml-dev,
- ocaml-nox,
+ ocaml,
  ocaml-dune,
- libalcotest-ocaml-dev,
+ libalcotest-ocaml-dev <!nocheck>,
  dh-ocaml (>= 1.2.1)
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Section: ocaml
 Homepage: https://ocsigen.org/tyxml
