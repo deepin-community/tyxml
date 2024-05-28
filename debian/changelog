@@ -1,3 +1,11 @@
+tyxml (4.5.0-4) unstable; urgency=medium
+
+  * Depend on ocaml instead of transitional ocaml-nox
+  * Bump Standards-Version to 4.6.2
+  * Mark <!nocheck> build-dependencies
+
+ -- Stéphane Glondu <glondu@debian.org>  Sun, 10 Sep 2023 05:51:52 +0200
+
 tyxml (4.5.0-3) unstable; urgency=medium
 
   * Include ocamlvars.mk in debian/rules
